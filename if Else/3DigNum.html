@@ -1,0 +1,19 @@
+<script>
+/* Write a program that accepts a three digit number from user and obtain reverse of the number and then calculate sum of
+all the digits.(without using if/loop) */
+var n,d1,d2,d3;
+n=121;
+d1 = n%10;
+d2 = parseInt(n/10)%10;
+d3 = parseInt(n/100);
+var sum = d1+d2+d3;
+var rev = d3*1+d2*10+d1*100;
+if (rev==n){
+    document.write("The number is a palindrome.");
+}
+else {
+    document.write("is not palidrome")
+}
+
+
+</script>

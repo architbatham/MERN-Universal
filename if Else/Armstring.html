@@ -1,0 +1,16 @@
+<script>
+   var n,d1,d2,d3;
+
+   n=153;
+   d1= n%10;
+   d2= parseInt(n/10)%10;
+   d3= parseInt(n/100);
+
+   var new_n = d1**3+d2**3+d3**3;
+  if (n==new_n){
+    document.write(n+" is an Armstrong number");
+  }else{
+    document.write(n+" is not an Armstrong number");
+  }                                    
+    </script>
+    
