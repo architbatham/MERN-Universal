@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    Enter A: <input type="text" id="input1" oninput="calculateSum()"><br>
+    Enter B: <input type="text" id="input2" oninput="calculateSum()"><br>
+    Enter C: <input type="text" id="input3" oninput="calculateSum()"><br>
+    Sum: <input type="text" id="output">
+    
+    <script>
+        function calculateSum() {
+            var input1 = parseFloat(document.getElementById("input1").value) || 0;
+            var input2 = parseFloat(document.getElementById("input2").value) || 0;
+            var input3 = parseFloat(document.getElementById("input3").value) || 0;
+            var sum = input1 + input2 + input3;
+            document.getElementById("output").value = sum;
+        }
+    </script>
+</body>
+</html>
