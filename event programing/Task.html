@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+    function zoomin(){
+        var ref = document.getElementById("myimg");
+        ref.height+=50;
+        ref.width+=50;
+    }
+    function zoomout(){
+        var ref = document.getElementById("myimg");
+        if (ref.height>200){
+
+        
+        ref.height-=50;
+        ref.width-=50;
+        }
+    }
+    
+</script>
+</head>
+<body>
+    <button onclick="zoomin()">ZoomIN</button>
+    <button onclick="zoomout()">ZoomOut</button>
+
+    <br><br>
+    <img id = "myimg" src = "spiderman-meme.avif" height="200" width="200">
+</body>
+</html>

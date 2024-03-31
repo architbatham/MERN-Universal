@@ -1,0 +1,16 @@
+<script>
+    //JSON
+    var emp={"eno":1001,"enm":"Jarvis","esal":10000.67};
+    document.write("Employee details : "+emp+"<br>");
+    document.write("typeof Employee details : "+typeof emp+"<br><br>");
+    
+    var emp_json=JSON.stringify(emp);
+    document.write("Employee details JSON : "+emp_json+"<br>");
+    document.write("typeof Employee details json : "+typeof emp_json+"<br><br>");
+    
+    var emp_obj=JSON.parse(emp_json);
+    document.write("Employee details obj : "+emp_obj+"<br>");
+    document.write("typeof Employee details obj : "+typeof emp_obj+"<br><br>");
+    
+    
+    </script>
