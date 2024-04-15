@@ -1,13 +1,9 @@
 import http from 'http';
 
-var server=http.createServer((request,response)=>{
- response.write("<h1>Welcome to Node server</h1>");
- response.end();  
-});
-
-server.listen(8081,(error)=>{
- if(error)
-  console.log(error);
- else
-  console.log("server invoked at link http://localhost:8081");
-});
+http.createServer((req,res)=>{
+    res.writeHead(200,{"content type":"text/html"});
+    res.write("<h1>Test server</h1>");
+    res.writeHead(200,{"content type":"text/css"});
+    res.end();
+}).listen(8081);
+console.log("Server start at link http://localhost:8081");
